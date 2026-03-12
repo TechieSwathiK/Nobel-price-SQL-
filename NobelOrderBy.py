@@ -27,3 +27,8 @@ select * from NOBEL_WIN where SUBJECT like 'P%';
 select * from NOBEL_WIN order by YEAR;
 select * from NOBEL_WIN order by YEAR DESC;
 
+
+select SUBJECT as "SUBJECT",
+count(*) as "number of winners" 
+from NOBEL_WIN
+group by SUBJECT;
